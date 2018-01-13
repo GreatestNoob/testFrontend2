@@ -1,0 +1,166 @@
+@media screen and (max-width: 1000px)
+  .wrapper
+    width: 220px!important
+    padding: 28px!important
+  .resp_one
+    padding-bottom: 10px!important
+  .namelink
+    font-size: 12px
+  .price
+    font-size: 14px!important
+  .old_price
+    font-size: 14px!important
+  .balls
+    font-size: 10px!important
+
+
+$wrapwidth: 750px
+$wrappad: 10px
+$imgwidth: 160px
+$wrapborder: 1px solid #ccc
+$wraprad:1px
+$codepad: 0 18px 0 0px
+$wrapmarg: 30px 15px
+$products: _220x220_1
+$codefz: 12px
+$pricefz: 24px
+$linksfz: 12px
+$linkscolor: #666
+$namecolor: black
+$codecolor: #666
+$namepad: 20px 0 15px 0
+$havecolor: #009933
+.wrapper
+  margin: $wrapmarg
+  width: $wrapwidth
+  padding: $wrappad
+  border: $wrapborder
+  border-radius: $wraprad
+  float: left
+
+@each $presents in present1
+  .#{$presents}
+    background: url('../img/#{$products}.jpg')
+    width: $imgwidth
+    height: $imgwidth
+.nopad
+  padding: 0
+
+.code
+  font-size: $codefz
+  float: left
+  line-height: 1.9
+  margin: -2px 0 0 0
+  padding: $codepad
+  color: $codecolor
+.have
+  color: $havecolor
+
+  border-bottom: 1px dotted $havecolor
+.have
+  &:hover
+    text-decoration: none!important
+    color: $havecolor !important
+.namelink
+  color: $namecolor
+  font-weight: Bold
+  padding: $namepad
+  display: block
+.namelink
+  &:hover
+    color: $namecolor
+.links_p
+  font-weight: Bold
+  color: #545454
+  float: left
+  margin: 0
+  font-size: $linksfz
+.links
+  font-size: $linksfz
+  float: left
+  text-decoration: none
+  color: $linkscolor
+.links
+  &:hover
+    color: $linkscolor
+.price
+  font-size: $pricefz
+  position: relative
+  font-weight: Bold
+.old_price
+  position: absolute
+  font-size: $pricefz
+  right: 0
+  font-weight: normal
+  color: #A7A7BA
+  bottom: -120%
+.balls
+  color: #A7A7BA
+  font-size: 12px
+  padding: 20px 0
+  float: right
+.too
+  float: right
+
+.buylink
+  height: 40px
+  text-transform: uppercase
+  width: 148px
+  padding-left: 45px
+  position: relative
+  line-height: 2.9
+  transition-duration: 0.4s
+  background: #FF9900
+  color: white
+  display: block
+  margin-top: 0px
+  float: right
+.buylink
+  &::after
+    position: absolute
+    content: ""
+    width: 25px
+    height: 28px
+    left: 6px
+    top: 7px
+    background: url(../img/sprite2.png)
+    background-position: 44px 0px
+.buylink
+  &:hover
+    background: #333
+    color: white
+    text-decoration: none!important
+.buyInfo
+  height: 40px
+  width: 220px
+  font-size: 12px
+  border: 1px solid #ccc
+  position: absolute
+  bottom: 50px
+  padding: 2px 40px
+  right: 0px
+.buyInfo
+  &::after
+    width: 10px
+    height: 10px
+    border-left: none
+    border-top: none
+    bottom: -6px
+    border-bottom: 1px solid #cccccc
+    border-right: 1px solid #cccccc
+    background: white
+    position: absolute
+    content: ""
+    transform: rotate(45deg)
+    left: 13px
+
+.buyInfo
+  &::before
+    width: 14px
+    height: 14px
+    position: absolute
+    content: ""
+    top: 12px
+    left: 10px
+    background: url(../img/info.png)
+    background-size: contain

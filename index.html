@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test</title>
+		<meta name="description" content="A free HTML5/CSS3 template made exclusively for Codrops by Peter Finlan" />
+		<meta name="keywords" content="html5 template, css3, test work" />
+		<meta name="author" content="Egor Stulenkov" />
+		<link rel="stylesheet" href="scss/tabs.css">
+		<link rel="stylesheet" href="scss/font-awesome.css">
+		<link href="scss/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="scss/style.css">
+	</head>
+	<body>
+
+			<div class="container wrapper">
+
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopad resp_one"><div class="present1"></div></div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 nopad"><p class="code">Код: 147268</p><a
+							href="" class="have">Наличие</a><br><a href="" class="namelink">Ламинат 31 кл Kronospan Kronofix Афцелия Малайская 2,47 м.кв. 7 мм</a><p class="links_p">Могут понадобиться:</p>
+						<a href="" class="links">&nbspподложка,</a><a href="" class="links">&nbspплинтус натуральный,</a><a href="" class="links">&nbsppулетка,</a><a href="" class="links">&nbspнабор для отладки ламината,</a><a href="" class="links">&nbspножовка по ламинату,</a><a href="" class="links">&nbspгель для стыков ламината Clic Protect.</a></div>
+				    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 nopad">
+						<div class="tabs">
+
+							<input id="tab1" type="radio" name="tabs" checked>
+							<label for="tab1" class="tab_one" title="Вкладка 1">За м.кв</label>
+							<input id="tab2" type="radio" name="tabs">
+							<label for="tab2" class="tab_two" title="Вкладка 2" class="tab2">За упаковку</label>
+							<section id="content-tab1">
+								<div class="contain">
+									<p class="too">По карте клуба<span class="price">&nbsp375,71&nbsp<i class="fa fa-rub" aria-hidden="true"></i><span class="old_price">391,09&nbsp<i class="fa fa-rub" aria-hidden="true"></i></span></span></p><p class="balls">Можно купить за 365,34 балла</p>
+								</div>
+							</section>
+							<section id="content-tab2">
+								<div class="contain var2">
+									<p class="too">По карте клуба<span class="price">&nbsp123,45&nbsp<i class="fa fa-rub" aria-hidden="true"></i><span class="old_price">151,19&nbsp<i class="fa fa-rub" aria-hidden="true"></i></span></span></p><p class="balls">Можно купить за 678,34 балла</p>
+								</div>
+							</section>
+						</div>
+
+
+
+							<div class="buyInfo">Продаётся упаковками:<br>1 упаковка = 2,47 м. кв.</div>
+							<div class="quantity">
+								<input type="number" class="quantity-val" min="1" value="1" name="quantity" />
+								<div class="quantity-up"><span class="arrow-up" aria-hidden="true"></span></div>
+								<div class="quantity-down"><span class="arrow-down" aria-hidden="true"></span></div>
+							</div>
+						<a href="" id="item1" data-product-id class="buylink">в корзину</a>
+
+
+					</div>
+			</div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			<script src="https://use.fontawesome.com/9229f44a32.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script>
+				$('.quantity-up').on('click', function(){
+                var elem = $(this).closest('.quantity').find('.quantity-val');
+                var val = Number(elem.val())+1;
+                elem.val(val);
+            });
+
+            $('.quantity-down').on('click', function(){
+                var elem = $(this).closest('.quantity').find('.quantity-val');
+                var val = Number(elem.val())-1;
+                if (val < 1) val = 1;
+                elem.val(val);
+            });</script>
+	</body>
+</html>

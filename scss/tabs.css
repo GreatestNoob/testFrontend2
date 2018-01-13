@@ -1,0 +1,229 @@
+@media screen and (max-width: 1000px){
+	.tabs>label {
+		font-size: 10px !important;
+	}
+	.tabs{
+		margin-bottom: 20px!important;
+	}
+	.quantity{
+		margin: 97% 0 -25% -8%!important;
+	}
+	.buylink{
+
+		padding-left: 40px!important;
+		width: 127px!important;
+		margin-right: -16px;
+
+	}
+	.buyInfo{
+		width: 191px!important;
+		right: -16px!important;
+		font-size: 10px!important;
+	}
+}
+
+.tabs {
+	position: relative;
+	min-width: 20px;
+	min-height: 20px;
+	float: right;
+}
+
+.tabs>section {
+	display: none;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.tabs>input {
+	display: none;
+	float: left;
+	position: absolute;
+}
+
+.tabs>label {
+	display: inline-block;
+	margin: 0;
+	float: left;
+	position: absolute;
+	font-weight: normal;
+	text-align: center;
+	color: #666;
+	padding: 0px 5px;
+	background: none;
+}
+.tab_one{
+	bottom: 0;
+	right: 40%;
+}
+.tab_two{
+	bottom: 0;
+	right: 0;
+}
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+
+.tabs>input:checked+label {
+	color: white;
+	background: black;
+}
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+
+.var2{
+	background: #345776;
+	text-align:center;
+}
+.var3{
+	background: #754333;
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	float: left;
+	margin-left: 4px;
+}
+.block2{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	display:inline-block;
+	
+}
+.block2:first-child{
+	margin:0;
+	
+}
+h2{
+	text-align: center;	
+}
+
+.my-flex-container{
+display: flex;
+}
+
+.block3{
+	width: 100px;
+	height: 100px;
+	background: #cc0000;
+	margin-left: 4px;
+	
+}
+
+.quantity {
+
+	margin: 70% 0 -16.5% 9.5%;
+	width: 64px;
+	height: 40px;
+	position: relative;
+	text-align: center;
+
+}
+
+input {
+	border: 1px solid #ccc;
+	color: black;
+}
+.quantity-val {
+	padding-left: 25%;
+	width: 100%;
+	height: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.quantity-up, .quantity-down {
+	position: absolute;
+	right: -4px;
+	height: 50%;
+
+	border: 0;
+	width: 26px;
+}
+
+.arrow-up, .arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position: absolute;
+	right: 8px;
+}
+
+.quantity-up {
+	top: 2px;
+}
+.arrow-up {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	top: -2px;
+	right: 4px;
+	z-index: 3;
+	content: " ";
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: url("../img/sprite.png");
+	background-position: 26px 0px;
+}
+.arrow-up:hover{
+	background-color: #696969;
+	background-position: 53px 0px;
+}
+.quantity-down {
+	bottom: 0;
+}
+.arrow-down {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	bottom: 0;
+	right: 4px;
+	background-position: 26px -20px!important;
+	border: 1px solid #ccc;
+	background: url("../img/sprite.png");
+
+}
+.arrow-down:hover{
+	background-color: #696969;
+
+	background-position: -1px -20px!important;
+
+}

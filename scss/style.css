@@ -1,0 +1,162 @@
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 220px !important;
+    padding: 28px !important; }
+
+  .resp_one {
+    padding-bottom: 10px !important; }
+
+  .namelink {
+    font-size: 12px; }
+
+  .price {
+    font-size: 14px !important; }
+
+  .old_price {
+    font-size: 14px !important; }
+
+  .balls {
+    font-size: 10px !important; } }
+.wrapper {
+  margin: 30px 15px;
+  width: 750px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  float: left; }
+
+.present1 {
+  background: url("../img/_220x220_1.jpg");
+  width: 160px;
+  height: 160px; }
+
+.nopad {
+  padding: 0; }
+
+.code {
+  font-size: 12px;
+  float: left;
+  line-height: 1.9;
+  margin: -2px 0 0 0;
+  padding: 0 18px 0 0px;
+  color: #666; }
+
+.have {
+  color: #009933;
+  border-bottom: 1px dotted #009933; }
+
+.have:hover {
+  text-decoration: none !important;
+  color: #009933 !important; }
+
+.namelink {
+  color: black;
+  font-weight: Bold;
+  padding: 20px 0 15px 0;
+  display: block; }
+
+.namelink:hover {
+  color: black; }
+
+.links_p {
+  font-weight: Bold;
+  color: #545454;
+  float: left;
+  margin: 0;
+  font-size: 12px; }
+
+.links {
+  font-size: 12px;
+  float: left;
+  text-decoration: none;
+  color: #666; }
+
+.links:hover {
+  color: #666; }
+
+.price {
+  font-size: 24px;
+  position: relative;
+  font-weight: Bold; }
+
+.old_price {
+  position: absolute;
+  font-size: 24px;
+  right: 0;
+  font-weight: normal;
+  color: #A7A7BA;
+  bottom: -120%; }
+
+.balls {
+  color: #A7A7BA;
+  font-size: 12px;
+  padding: 20px 0;
+  float: right; }
+
+.too {
+  float: right; }
+
+.buylink {
+  height: 40px;
+  text-transform: uppercase;
+  width: 148px;
+  padding-left: 45px;
+  position: relative;
+  line-height: 2.9;
+  transition-duration: 0.4s;
+  background: #FF9900;
+  color: white;
+  display: block;
+  margin-top: 0px;
+  float: right; }
+
+.buylink::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 28px;
+  left: 6px;
+  top: 7px;
+  background: url(../img/sprite2.png);
+  background-position: 44px 0px; }
+
+.buylink:hover {
+  background: #333;
+  color: white;
+  text-decoration: none !important; }
+
+.buyInfo {
+  height: 40px;
+  width: 220px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  position: absolute;
+  bottom: 50px;
+  padding: 2px 40px;
+  right: 0px; }
+
+.buyInfo::after {
+  width: 10px;
+  height: 10px;
+  border-left: none;
+  border-top: none;
+  bottom: -6px;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  background: white;
+  position: absolute;
+  content: "";
+  transform: rotate(45deg);
+  left: 13px; }
+
+.buyInfo::before {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 10px;
+  background: url(../img/info.png);
+  background-size: contain; }
+
+/*# sourceMappingURL=style.css.map */
